@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body, #body{
+    height: 100%;
+}
+p, img{
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+}
+#navbar
+{
+    align-items:  center;
+    display: flex;
+    height: 30px;
+    background-color: dimgrey;
+    padding: 5px;
+}
+.emp{
+    width: 60px;
+    height: 60px;
+}
+
+#logomenu{
+    height: 130%;
+}
+#corps
+{
+    display: flex;
+    flex-wrap: wrap;
+    background:center / 100% no-repeat url(img/wallpaper.jpg);
+}
+#dateEtheure{
+    color: white;
+    margin-left: auto;
+}
+.emp div{
+    height: inherit;
+    width: inherit;
+    text-align: center;
+}
+.emp img{
+    height: 70%;
+}
+.emp p{
+    color: white;
+    font-size: 70%;
+}
+#appFolder{
+    background-color: white;
+    position: absolute;
+    height: max-content;
+    width: 50%;
+    top:50px;
+    left: 25%;
+    border-radius: 6px;
+}
+#barre{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: grey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#avant,#apres,#fermer{
+    width: 15px;
+    height: 15px;
+}
+#fermer{
+    margin-left: auto;
+    background-image: url(img/fermer.png);
+}
+#avant{
+    margin-right: 5px;
+    background-image: url(img/nav_avant.png);
+    opacity: 0.5;
+}
+#apres{
+    background-image: url(img/nav_apres.png);
+    opacity: 0.5;
+}
+#sous_dossier{
+    min-height: 25px;
+}
+.dossier,.safari,.vs{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin: 5px;
+}
+.dossier{
+    background: url(img/folder.png) no-repeat 10px;
+    background-size: 15px;
+}
+.safari{
+    background: url(img/Safari.png) no-repeat 10px;
+    background-size: 15px;
+}
+.vs{
+    background: url(img/visual_studio.png) no-repeat 10px;
+    background-size: 15px;
+}
+.dossier_bureau:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.dossier:hover,.safari:hover,.vs:hover{
+    background-color: rgba(137, 196, 244, 0.5);
+}
+.dossier p,.safari p,.vs p{
+    margin-left: 35px;
+}
