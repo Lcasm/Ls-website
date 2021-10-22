@@ -1,18 +1,18 @@
 //init var
 var lastnbenfant
-var json = '[{"name":"HTML/CSS","type":"folder","src":"img/folder.png","dossier":[{"name":"flex","sous_dossier":[]},{"name":"javascript","sous_dossier":[]}]},{"name":"VB/C#","type":"folder","src":"img/folder.png","dossier":[{"name":"boucle","sous_dossier":[]},{"name":"condition","sous_dossier":[]}]},{"name":"Python","type":"folder","src":"img/folder.png","dossier":[{"name":"nombre premier","sous_dossier":[]},{"name":"convertiseur de base","sous_dossier":[]}]},{"name":"SQL","type":"folder","src":"img/folder.png","dossier":[{"name":"Gestion d’une discothèque","sous_dossier":[{"name":"blabla1","type":"safari","url":"https://boxicons.com/?query=nav"},{"name":"blabla2","type":"vs"}]},{"name":"Serres du jardin Citroën","sous_dossier":[]},{"name":"Gestion de la section BTS SIO.","sous_dossier":[]},{"name":"Subventions européennes","sous_dossier":[]},{"name":"Armor Company","sous_dossier":[]}]}]'
-var app = JSON.parse(json)
+//  var json = '[{"name":"HTML/CSS","type":"folder","src":"img/folder.png","dossier":[{"name":"flex","sous_dossier":[]},{"name":"javascript","sous_dossier":[]}]},{"name":"VB/C#","type":"folder","src":"img/folder.png","dossier":[{"name":"boucle","sous_dossier":[]},{"name":"condition","sous_dossier":[]}]},{"name":"Python","type":"folder","src":"img/folder.png","dossier":[{"name":"nombre premier","sous_dossier":[]},{"name":"convertiseur de base","sous_dossier":[]}]},{"name":"SQL","type":"folder","src":"img/folder.png","dossier":[{"name":"Gestion d’une discothèque","sous_dossier":[{"name":"blabla1","type":"safari","url":"https://boxicons.com/?query=nav"},{"name":"blabla2","type":"vs"}]},{"name":"Serres du jardin Citroën","sous_dossier":[]},{"name":"Gestion de la section BTS SIO.","sous_dossier":[]},{"name":"Subventions européennes","sous_dossier":[]},{"name":"Armor Company","sous_dossier":[]}]}]'
+var app = [] // JSON.parse(json)
 var appdiv
 var mousePosition;
 var offset = [0,0];
 var isDown = false;
 var lastfolder
 var nextfolder
-
+var url = new URL('http://127.0.0.1:5500/data.json')
 
 
 //fonction date et heure
-setInterval("dateEtheure()", 1000)
+//setInterval("dateEtheure()", 1000)
 function dateEtheure(){
     var aujourdhui = new Date();
     var jours = aujourdhui.getDay()
@@ -32,20 +32,19 @@ function dateEtheure(){
 //fonction au chargement du body
 function init(){
     redim();
-    dateEtheure()
-    appInit()
+    //dateEtheure()
+
     // fetch fichier json dans app
-    //fetch('data.json').then(function (response) {
-    //    if (response.ok) {
-    //        response.json().then(function (json) {
-    //            app = json;
-    //        });
-    //    }else{
-    //        console.log('Network request for app.json failed with response ' + response.status + ': ' + response.statusText);
-    //    }
-    //}).catch(console.error);
-    
-    
+    fetch(url).then(function (response) {
+        if (response.ok) {
+            response.json().then(function (json) {
+                app = json;
+                appInit();
+            }).catch(console.error);
+        }else{
+            console.log('Network request for app.json failed with response ' + response.status + ': ' + response.statusText);
+        }
+    }).catch(console.error);
 }
 
 //function add app sur le bureau

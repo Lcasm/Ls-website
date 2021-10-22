@@ -1,72 +1,64 @@
 [
-{
-    "name":"HTML/CSS",
-    "type":"folder",
-    "src":"img/folder.png",
-    "dossier":[
-        {
-            "name":"flex",
-            "sous_dossier":[]
-        },
-        {
-            "name":"javascript",
-            "sous_dossier":[]
-        }
-    ]
-},{
-    "name":"VB/C#",
-    "type":"folder",
-    "src":"img/folder.png",
-    "dossier":[
-        {
-            "name":"boucle",
-            "sous_dossier":[]
-        },
-        {
-            "name":"condition",
-            "sous_dossier":[]
-        }
-    ]
-},{
-    "name":"Python",
-    "type":"folder",
-    "src":"img/folder.png",
-    "dossier":[
-        {
-            "name":"nombre premier",
-            "sous_dossier":[]
-        },
-        {
-            "name":"convertiseur de base",
-            "sous_dossier":[]
-        }
-    ]
-},{
-    "name":"SQL",
-    "type":"folder",
-    "src":"img/folder.png",
-    "dossier":[
-        {
-            "name":"Gestion d’une discothèque",
-            "sous_dossier":[]
-        },
-        {
-            "name":"Serres du jardin Citroën",
-            "sous_dossier":[]
-        },
-        {
-            "name":"Gestion de la section BTS SIO.",
-            "sous_dossier":[]
-        },
-        {
-            "name":"Subventions européennes",
-            "sous_dossier":[]
-        },
-        {
-            "name":"Armor Company",
-            "sous_dossier":[]
-        }
-    ]
-}
-
-]
+    {"name":"HTML/CSS",
+        "type":"folder",
+        "src":"img/folder.png",
+        "dossier":[
+            {"name":"flex",
+                "sous_dossier":[]
+            },
+            {
+                "name":"javascript",
+                "sous_dossier":[]
+            }
+        ]
+    },
+    {
+        "name":"VB/C#",
+        "type":"folder",
+        "src":"img/folder.png",
+        "dossier":[
+            {
+                "name":"boucle",
+                "sous_dossier":[]
+            },
+            {
+                "name":"condition",
+                "sous_dossier":[]
+            }
+        ]
+    },
+    {
+        "name":"Python",
+        "type":"folder",
+        "src":"img/folder.png",
+        "dossier":[
+            {
+                "name":"nombre premier",
+                "sous_dossier":[]
+            },
+            {
+                "name":"convertiseur de base",
+                "sous_dossier":[]
+            }
+        ]
+    },
+    {
+        "name":"SQL",
+        "type":"folder",
+        "src":"img/folder.png",
+        "dossier":[
+            {"name":"Gestion d’une discothèque",
+                "sous_dossier":[
+                    {"name":"blabla1",
+                        "type":"safari",
+                        "url":"https://boxicons.com/?query=nav"
+                    },
+                    {"name":"blabla2",
+                        "type":"vs"
+                    }
+                ]
+            },
+            {
+                "name":"Serres du jardin Citroën",
+                "sous_dossier":[]
+            },{"name":"Gestion de la section BTS SIO.","sous_dossier":[]},{"name":"Subventions européennes","sous_dossier":[]},{"name":"Armor Company","sous_dossier":[]}]}]
